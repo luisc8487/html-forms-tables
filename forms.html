@@ -10,27 +10,42 @@
 
     <form action="">
       <label for="username">Enter a Username</label>
-      <input id="username" type="text" placeholder="Enter your name" />
+      <input
+        id="username"
+        type="text"
+        placeholder="Enter your name"
+        name="username"
+      />
       <br />
       <label for="password">Enter a Password</label>
-      <input id="password" type="password" placeholder="Enter your password" />
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter your password"
+        name="password"
+      />
       <br />
       <label for="color">Enter a Color</label>
-      <input id="color" type="color" />
+      <input id="color" type="color" name="color" />
       <br />
       <label for="birthday">Enter your birthday</label>
-      <input id="birthday" type="month" placeholder="Enter your birthday" />
+      <input
+        id="birthday"
+        type="month"
+        placeholder="Enter your birthday"
+        name="birthday"
+      />
       <!-- Alternative way to label an input (less common) -->
       <label>
         Enter your Average:
-        <input id="age" type="number" placeholder="Enter your age" />
+        <input id="age" type="number" placeholder="Enter your age" name="age" />
       </label>
       <!-- this button doesn't submit the form b/c of the "type" attribute -->
       <button type="button">Regular button (won't submit)</button>
       <!-- this button submits the form! -->
-      <button>CLICK ME</button>
+      <button>Submit!!!</button>
       <!-- So does this one: -->
-      <input type="submit" value="CLICK ME" />
+      <input type="submit" value="CLICK ME!" />
     </form>
     <!-- Outside of a form. no default behavior -->
     <button>NOT INSIDE FORM</button>
