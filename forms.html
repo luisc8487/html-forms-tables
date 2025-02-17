@@ -18,11 +18,21 @@
       <label for="color">Enter a Color</label>
       <input id="color" type="color" />
       <br />
-      <label for="age">Enter your age</label>
-      <input id="age" type="number" placeholder="Enter your age" />
-      <br />
       <label for="birthday">Enter your birthday</label>
       <input id="birthday" type="month" placeholder="Enter your birthday" />
+      <!-- Alternative way to label an input (less common) -->
+      <label>
+        Enter your Average:
+        <input id="age" type="number" placeholder="Enter your age" />
+      </label>
+      <!-- this button doesn't submit the form b/c of the "type" attribute -->
+      <button type="button">Regular button (won't submit)</button>
+      <!-- this button submits the form! -->
+      <button>CLICK ME</button>
+      <!-- So does this one: -->
+      <input type="submit" value="CLICK ME" />
     </form>
+    <!-- Outside of a form. no default behavior -->
+    <button>NOT INSIDE FORM</button>
   </body>
 </html>
