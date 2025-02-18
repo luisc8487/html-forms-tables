@@ -97,7 +97,29 @@
       <br />
       <label for="requests">Any Special Requests?</label>
       <br />
-      <textarea id="requests" name="Requests?" cols="30" rows="10" placeholder="Type something here"></textarea>
+      <textarea
+        id="requests"
+        name="Requests?"
+        cols="30"
+        rows="10"
+        placeholder="Type something here"
+      ></textarea>
+      <button>Submit</button>
+    </form>
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+      <label for="first">Enter First Name</label>
+      <input type="text" name="first" id="first" required />
+      <br />
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        minlength="5"
+        maxlength="12"
+        required
+      />
       <button>Submit</button>
     </form>
   </body>
